@@ -79,7 +79,7 @@ export default function DashboardScreen() {
         <View style={styles.headerContent}>
           <View>
             <Text style={[styles.headerApp, { color: colors.primary }]}>
-              Franca Segura
+              ViaSafe
             </Text>
             <Text style={[styles.headerSub, { color: colors.mutedForeground }]}>
               Cuide do trânsito da sua cidade

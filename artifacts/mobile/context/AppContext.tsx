@@ -263,7 +263,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [ranking] = useState(defaultRanking);
 
   useEffect(() => {
-    AsyncStorage.getItem("franca_segura_data").then((data) => {
+    AsyncStorage.getItem("viasafe_data").then((data) => {
       if (data) {
         try {
           const parsed = JSON.parse(data);
@@ -274,7 +274,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    AsyncStorage.setItem("franca_segura_data", JSON.stringify({ xp }));
+    AsyncStorage.setItem("viasafe_data", JSON.stringify({ xp }));
   }, [xp]);
 
   const addReport = useCallback(
